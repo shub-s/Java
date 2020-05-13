@@ -1,8 +1,10 @@
-// Save this file as Example.java
-class Example{
-    // Main method starts here
+class Demo{
     public static void main(String[] args) {
-        // Display a single line "World" on the console
-        System.out.println("World");// Printing statement on the console
-    }//main loop ends
-}//class loop ends
+        int num;
+        num = 100;
+        System.out.println("This is num : " +num);
+        num = num * 2;
+        System.out.println("This value of num * 2 : "+num);
+
+    }
+}
