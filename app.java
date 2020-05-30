@@ -1,14 +1,12 @@
-package phonedir;
-
 class smsgate{
-    public void sendsms(int mob){
-        //Some API places here to call
+    public void sendsms(long mob){
+        System.out.println("SMS Send Successfull");
     }
 }
 
 class app{
     public static void main(String[] args) {
-        int cell = 9988776655;
+        long cell = 9988776655L;
         smsgate sms = new smsgate();
         sms.sendsms(cell);
     }
