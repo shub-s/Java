@@ -1,5 +1,6 @@
 public class StringDemo{
     public static void main(String[] args) {
+        String _hasdhasd;
             add obj = new add();
             obj.addNum();
         }
