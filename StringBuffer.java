@@ -12,8 +12,7 @@ class StringBuffer{
         return sb.toString();
     }
     public static void main(String[] args) {
-        String str = "9988ff55hh@498";
-        StringBuffer sb = new StringBuffer();
+        String str = "9988ff55hh@498";        
         str = convert(str);
         System.out.println(str);
     }
