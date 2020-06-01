@@ -8,7 +8,6 @@ class StringBuffer{
                 i--;
             }
         }
-
         return sb.toString();
     }
     public static void main(String[] args) {

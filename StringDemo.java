@@ -1,16 +1,20 @@
-public class StringDemo{
-    public static void main(String[] args) {
-        String _hasdhasd;
-            add obj = new add();
-            obj.addNum();
-        }
-    }
+class StringDemo{
+    public static String convert(String str){
+        StringBuffer sb = new StringBuffer(str);
 
-class add extends Thread{
-    public void addNum(){
-        for(int i = 0; i<10; i++){
-            Thread.sleep(1000);
-            System.out.println(i);
+        for(int i=0; i<sb.length(); i++){
+            if(sb.charAt(i) < 48 || sb.charAt(i) > 57){
+                sb.deleteCharAt(i);
+                i--;
+            }
         }
+
+        return sb.toString();
+    }
+    public static void main(String[] args) {
+        String str = "9988ff55hh@498";
+        StringBuffer sb = new StringBuffer();
+        str = convert(str);
+        System.out.println(str);
     }
 }
