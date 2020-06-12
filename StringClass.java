@@ -1,5 +1,5 @@
-public class StringClass {
-    public static void main(String[] args) throws Exception {
-        
-    }
+class StringClass{
+	public static void main(String[] args) {
+		
+	}
 }
