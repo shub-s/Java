@@ -1,28 +1,18 @@
-class printer extends Thread{
+class MultithreadingDemo extends Thread{
     public void run(){
-        for(int i=0; i<10; i++){
-            System.out.println("Priting Document/s "+i);
-            try {Thread.sleep(100); } catch (Exception e) {}  
+        try {
+            System.out.println("Thread "+Thread.currentThread().getId());
+        } catch (Exception e) {
+            System.out.println("Exception is Cought.");
         }
     }
 }
 
-class display extends Thread{
-    public void run(){
-        for(int i=0; i<10; i++){
-            System.out.println("Documents Display #"+i);
-            try {Thread.sleep(100); } catch (Exception e) {}  
-        }
-    }
-}
-
-class Threads{
+public class Threads{
     public static void main(String[] args) {
-        printer p = new printer();
-        display d = new display();
-        p.start();
-        try {Thread.sleep(10); } catch (Exception e) {}        
-        d.start();
-        
+        for(int i=0; i<8; i++){
+            MultithreadingDemo obj = new MultithreadingDemo();
+            obj.start();
+        }
     }
 }
